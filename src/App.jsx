@@ -13,14 +13,14 @@ export default function App() {
 			<Routes>
 				<Route path='/login' element={<Login />} />
 				<Route
-					path='/'
+					path='/crud'
 					element={
 						<PrivateRoute>
 							<MainLayout />
 						</PrivateRoute>
 					}
 				>
-					<Route index path='crud' element={<Crud />} />
+					<Route index path='/crud' element={<Crud />} />
 				</Route>
 				<Route path='*' element={<NotFound/>} />
 			</Routes>
