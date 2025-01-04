@@ -31,7 +31,7 @@ function Login() {
 				if (res.data) {
 					localStorage.setItem("token", res.data.token);
 					toast.success("Siz muvaffaqiyatli tizimga kirdingiz!"); // Muvaffaqiyatli bildirishnoma
-					navigate("/dashboard");
+					navigate("/crud");
 				}
 			})
 			.catch((error) => {
